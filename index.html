@@ -216,6 +216,10 @@
     padding: 16px; line-height: 1.6;
   }
   .demo-body { padding: 16px 17px 17px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+  .demo-date {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--clay); margin: 0;
+  }
   .demo-body h3 { font-family: var(--mono); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
   .demo-body p { margin: 0; font-size: 14px; color: var(--ink-2); flex: 1; }
   .demo-stack { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
@@ -345,6 +349,7 @@
           <img src="previews/colordetector.jpg" alt="Screenshot of the ColorDetector app running" loading="lazy" width="900" height="562">
         </a>
         <div class="demo-body">
+          <p class="demo-date">Created August 2026</p>
           <h3>ColorDetector</h3>
           <p>Type a CSS colour name and the swatch resolves live to its hex value, with a debounce hook throttling the lookup and a control to flip the label between light and dark.</p>
           <p class="demo-stack">React 19 · Vite · custom hooks</p>
@@ -360,6 +365,7 @@
           <img src="previews/typescript-cart.jpg" alt="Screenshot of the typescript-cart app running" loading="lazy" width="900" height="562">
         </a>
         <div class="demo-body">
+          <p class="demo-date">Created May 2023</p>
           <h3>typescript-cart</h3>
           <p>A typed storefront: product grid, add-to-cart, and a running item count and order total in the header. Cart state runs through a reducer behind a typed context.</p>
           <p class="demo-stack">React 18 · TypeScript · Context + useReducer · Vite</p>
@@ -373,6 +379,7 @@
       <article class="demo">
         <span class="demo-shot none">Preview not captured —<br>open the live demo</span>
         <div class="demo-body">
+          <p class="demo-date">Created March 2023</p>
           <h3>robo-friends</h3>
           <p>Searchable directory of generated robot avatars — the classic exercise in lifting state up and filtering a rendered list as you type.</p>
           <p class="demo-stack">React 18 · Create React App</p>
@@ -388,6 +395,7 @@
           <img src="previews/tailwindcss-project.jpg" alt="Screenshot of the Tailwindcss-Project app running" loading="lazy" width="900" height="562">
         </a>
         <div class="demo-body">
+          <p class="demo-date">Created February 2023</p>
           <h3>Tailwindcss-Project</h3>
           <p>Acme Rockets — a responsive marketing page built on Tailwind, with a sticky nav, product sections, testimonials and a contact form.</p>
           <p class="demo-stack">Tailwind CSS · static build</p>
@@ -403,6 +411,7 @@
           <img src="previews/background-generator.jpg" alt="Screenshot of the background-generator app running" loading="lazy" width="900" height="562">
         </a>
         <div class="demo-body">
+          <p class="demo-date">Created March 2023</p>
           <h3>background-generator</h3>
           <p>Two colour inputs drive a live CSS gradient across the page, and the generated linear-gradient rule is printed underneath ready to copy.</p>
           <p class="demo-stack">Vanilla JS · Browserify</p>
@@ -427,11 +436,6 @@
       <div class="repos" id="repos">
         <a class="repo ghost" href="https://github.com/Shamala/DailyLight" target="_blank" rel="noopener">
           <span class="repo-name">DailyLight</span>
-          <p class="repo-desc">Description loads live.</p>
-          <div class="repo-meta"><span>pushed Sep 2026</span></div>
-        </a>
-        <a class="repo ghost" href="https://github.com/Shamala/ColorDetector" target="_blank" rel="noopener">
-          <span class="repo-name">ColorDetector</span>
           <p class="repo-desc">Description loads live.</p>
           <div class="repo-meta"><span>pushed Sep 2026</span></div>
         </a>
@@ -745,6 +749,12 @@
     return Math.floor(days / 365) + "y ago";
   }
 
+  function created(iso) {
+    const d = new Date(iso);
+    if (isNaN(d)) return "—";
+    return d.toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+  }
+
   function renderRepos(list) {
     reposEl.innerHTML = list.map(function (r) {
       const color = LANG_COLORS[r.language] || "var(--ink-3)";
@@ -757,8 +767,8 @@
         '<div class="repo-meta">' +
           (r.language ? '<span class="lang"><i style="background:' + color + '"></i>' + esc(r.language) + "</span>" : "") +
           "<span>★ " + (r.stargazers_count || 0) + "</span>" +
-          "<span>⑂ " + (r.forks_count || 0) + "</span>" +
-          "<span>" + since(r.pushed_at) + "</span>" +
+          "<span>created " + created(r.created_at) + "</span>" +
+          "<span>updated " + since(r.pushed_at) + "</span>" +
         "</div></a>";
     }).join("");
   }
