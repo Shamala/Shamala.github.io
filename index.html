@@ -1,32 +1,36 @@
 <title>Shamala Mallya</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="alternate icon" href="favicon.ico" sizes="48x48">
-<meta name="theme-color" content="#1f4fd8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="alternate icon" href="favicon.ico" sizes="48x48" />
+<meta name="theme-color" content="#1f4fd8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600&display=swap"
+/>
 
 <style>
   :root {
-    --paper:   #eef1f4;
+    --paper: #eef1f4;
     --surface: #ffffff;
-    --sunken:  #e4e9ee;
-    --ink:     #141b26;
-    --ink-2:   #4a5666;
-    --ink-3:   #7c8899;
-    --line:    #d3dae1;
-    --accent:  #1f4fd8;
+    --sunken: #e4e9ee;
+    --ink: #141b26;
+    --ink-2: #4a5666;
+    --ink-3: #7c8899;
+    --line: #d3dae1;
+    --accent: #1f4fd8;
     --accent-soft: #e0e7fb;
-    --clay:    #c4603a;
-    --clay-soft:   #f6e5dd;
-    --ok:      #1d7a52;
+    --clay: #c4603a;
+    --clay-soft: #f6e5dd;
+    --ok: #1d7a52;
 
     --display: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
-    --body:    "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --body:
+      "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
     --measure: 66ch;
     --wrap: 1080px;
@@ -35,36 +39,38 @@
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --paper:   #0d131c;
+      --paper: #0d131c;
       --surface: #151e2a;
-      --sunken:  #101823;
-      --ink:     #e4e9ef;
-      --ink-2:   #9aa7b8;
-      --ink-3:   #6c7a8c;
-      --line:    #263243;
-      --accent:  #7b9dff;
+      --sunken: #101823;
+      --ink: #e4e9ef;
+      --ink-2: #9aa7b8;
+      --ink-3: #6c7a8c;
+      --line: #263243;
+      --accent: #7b9dff;
       --accent-soft: #1b2a4d;
-      --clay:    #e0835c;
-      --clay-soft:   #3a2419;
-      --ok:      #4bbd8b;
+      --clay: #e0835c;
+      --clay-soft: #3a2419;
+      --ok: #4bbd8b;
     }
   }
   :root[data-theme="dark"] {
-    --paper:   #0d131c;
+    --paper: #0d131c;
     --surface: #151e2a;
-    --sunken:  #101823;
-    --ink:     #e4e9ef;
-    --ink-2:   #9aa7b8;
-    --ink-3:   #6c7a8c;
-    --line:    #263243;
-    --accent:  #7b9dff;
+    --sunken: #101823;
+    --ink: #e4e9ef;
+    --ink-2: #9aa7b8;
+    --ink-3: #6c7a8c;
+    --line: #263243;
+    --accent: #7b9dff;
     --accent-soft: #1b2a4d;
-    --clay:    #e0835c;
-    --clay-soft:   #3a2419;
-    --ok:      #4bbd8b;
+    --clay: #e0835c;
+    --clay-soft: #3a2419;
+    --ok: #4bbd8b;
   }
 
-  * { box-sizing: border-box; }
+  * {
+    box-sizing: border-box;
+  }
 
   body {
     margin: 0;
@@ -83,14 +89,28 @@
     padding-inline: 20px;
   }
 
-  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  a:focus-visible, button:focus-visible, input:focus-visible {
+  a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 3px;
   }
 
-  h1, h2, h3 { font-family: var(--display); font-weight: 700; text-wrap: balance; margin: 0; line-height: 1.12; }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--display);
+    font-weight: 700;
+    text-wrap: balance;
+    margin: 0;
+    line-height: 1.12;
+  }
 
   /* ---------- top bar ---------- */
   .bar {
@@ -102,199 +122,544 @@
     border-bottom: 1px solid var(--line);
   }
   .bar-in {
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 16px; min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 54px;
   }
-  .sig { font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: -0.01em; }
-  .bar nav { display: flex; gap: 18px; flex-wrap: wrap; }
+  .sig {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+  }
+  .bar nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
   .bar nav a {
-    font-family: var(--mono); font-size: 12px; color: var(--ink-2);
-    text-decoration: none; letter-spacing: 0.02em;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-2);
+    text-decoration: none;
+    letter-spacing: 0.02em;
   }
-  .bar nav a:hover { color: var(--accent); }
-  @media (max-width: 640px) { .bar nav { display: none; } }
+  .bar nav a:hover {
+    color: var(--accent);
+  }
+  @media (max-width: 640px) {
+    .bar nav {
+      display: none;
+    }
+  }
 
   /* ---------- hero ---------- */
-  .hero { padding-block: 64px 48px; }
+  .hero {
+    padding-block: 64px 48px;
+  }
   .eyebrow {
-    font-family: var(--mono); font-size: 11.5px; font-weight: 500;
-    letter-spacing: 0.14em; text-transform: uppercase; color: var(--clay);
+    font-family: var(--mono);
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--clay);
     margin: 0 0 20px;
   }
   .hero h1 {
     font-size: clamp(42px, 8vw, 78px);
-    font-weight: 800; letter-spacing: -0.035em;
+    font-weight: 800;
+    letter-spacing: -0.035em;
   }
   .hero .role {
-    font-family: var(--display); font-weight: 500;
-    font-size: clamp(19px, 3vw, 25px); color: var(--ink-2);
-    margin: 14px 0 0; max-width: 36ch; line-height: 1.3;
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(19px, 3vw, 25px);
+    color: var(--ink-2);
+    margin: 14px 0 0;
+    max-width: 36ch;
+    line-height: 1.3;
     text-wrap: balance;
   }
-  .hero p.lede { max-width: var(--measure); margin: 26px 0 0; color: var(--ink-2); font-size: 17px; }
-  .hero p.lede strong { color: var(--ink); font-weight: 600; }
-
-  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-family: var(--mono); font-size: 13px;
-    padding: 9px 15px; border-radius: var(--r);
-    border: 1px solid var(--line); background: var(--surface);
-    color: var(--ink); text-decoration: none;
+  .hero p.lede {
+    max-width: var(--measure);
+    margin: 26px 0 0;
+    color: var(--ink-2);
+    font-size: 17px;
   }
-  .btn:hover { border-color: var(--accent); color: var(--accent); }
-  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .btn.primary:hover { color: #fff; filter: brightness(1.08); }
+  .hero p.lede strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 13px;
+    padding: 9px 15px;
+    border-radius: var(--r);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .btn.primary:hover {
+    color: #fff;
+    filter: brightness(1.08);
+  }
 
   .facts {
-    display: flex; flex-wrap: wrap; gap: 0;
-    margin-top: 44px; border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 44px;
+    border-top: 1px solid var(--line);
   }
-  .fact { padding: 18px 26px 18px 0; margin-right: 26px; border-right: 1px solid var(--line); }
-  .fact:last-child { border-right: 0; }
+  .fact {
+    padding: 18px 26px 18px 0;
+    margin-right: 26px;
+    border-right: 1px solid var(--line);
+  }
+  .fact:last-child {
+    border-right: 0;
+  }
   .fact b {
-    display: block; font-family: var(--display); font-weight: 800;
-    font-size: 28px; letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
+    display: block;
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
   }
-  .fact span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+  .fact span {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
 
   /* ---------- section shell ---------- */
-  section { padding-block: 56px; border-top: 1px solid var(--line); }
-  .sec-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
-  .sec-head h2 { font-size: clamp(27px, 4.5vw, 38px); letter-spacing: -0.025em; }
-  .sec-head .count { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
-  .sec-sub { color: var(--ink-2); max-width: var(--measure); margin: 0 0 34px; }
+  section {
+    padding-block: 56px;
+    border-top: 1px solid var(--line);
+  }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .sec-head h2 {
+    font-size: clamp(27px, 4.5vw, 38px);
+    letter-spacing: -0.025em;
+  }
+  .sec-head .count {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+  .sec-sub {
+    color: var(--ink-2);
+    max-width: var(--measure);
+    margin: 0 0 34px;
+  }
 
   /* ---------- github ---------- */
   .gh-note {
-    display: flex; gap: 12px; align-items: flex-start;
-    background: var(--clay-soft); border: 1px solid color-mix(in srgb, var(--clay) 32%, transparent);
-    border-radius: var(--r); padding: 13px 15px; margin-bottom: 26px;
-    font-size: 13.5px; color: var(--ink);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--clay-soft);
+    border: 1px solid color-mix(in srgb, var(--clay) 32%, transparent);
+    border-radius: var(--r);
+    padding: 13px 15px;
+    margin-bottom: 26px;
+    font-size: 13.5px;
+    color: var(--ink);
   }
-  .gh-note code { font-family: var(--mono); font-size: 12.5px; background: color-mix(in srgb, var(--clay) 16%, transparent); padding: 1px 5px; border-radius: 3px; }
-  .gh-note .dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--clay); margin-top: 8px; }
-  .gh-note[hidden] { display: none; }
+  .gh-note code {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    background: color-mix(in srgb, var(--clay) 16%, transparent);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  .gh-note .dot {
+    flex: none;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--clay);
+    margin-top: 8px;
+  }
+  .gh-note[hidden] {
+    display: none;
+  }
 
-  .repos { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 14px; }
-  .repo {
-    display: flex; flex-direction: column; gap: 10px;
-    background: var(--surface); border: 1px solid var(--line);
-    border-radius: var(--r); padding: 17px 18px; text-decoration: none; color: inherit;
+  .repos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+    gap: 14px;
   }
-  .repo:hover { border-color: var(--accent); }
-  .repo.ghost { opacity: 0.62; }
-  .repo-name { font-family: var(--mono); font-weight: 600; font-size: 14.5px; color: var(--accent); word-break: break-word; }
-  .repo-desc { font-size: 14px; color: var(--ink-2); margin: 0; flex: 1; }
-  .topics { display: flex; flex-wrap: wrap; gap: 5px; }
+  .repo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 17px 18px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .repo:hover {
+    border-color: var(--accent);
+  }
+  .repo.ghost {
+    opacity: 0.62;
+  }
+  .repo-name {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--accent);
+    word-break: break-word;
+  }
+  .repo-desc {
+    font-size: 14px;
+    color: var(--ink-2);
+    margin: 0;
+    flex: 1;
+  }
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
   .topic {
-    font-family: var(--mono); font-size: 10.5px; padding: 2px 7px; border-radius: 20px;
-    background: var(--accent-soft); color: var(--accent);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    padding: 2px 7px;
+    border-radius: 20px;
+    background: var(--accent-soft);
+    color: var(--accent);
   }
   .repo-meta {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
-    font-family: var(--mono); font-size: 11.5px; color: var(--ink-3);
-    border-top: 1px solid var(--line); padding-top: 10px; font-variant-numeric: tabular-nums;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    border-top: 1px solid var(--line);
+    padding-top: 10px;
+    font-variant-numeric: tabular-nums;
   }
-  .lang { display: inline-flex; align-items: center; gap: 6px; }
-  .lang i { width: 9px; height: 9px; border-radius: 50%; background: var(--ink-3); display: inline-block; }
+  .lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .lang i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--ink-3);
+    display: inline-block;
+  }
 
   .subhead {
-    font-family: var(--mono); font-size: 11px; letter-spacing: 0.13em;
-    text-transform: uppercase; color: var(--ink-3);
-    margin: 0 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
   }
-  .subhead.later { margin-top: 52px; }
+  .subhead.later {
+    margin-top: 52px;
+  }
 
-  .demos { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  .demos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+  }
   .demo {
-    display: flex; flex-direction: column;
-    background: var(--surface); border: 1px solid var(--line);
-    border-radius: var(--r); overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    overflow: hidden;
   }
-  .demo:hover { border-color: var(--accent); }
+  .demo:hover {
+    border-color: var(--accent);
+  }
   .demo-shot {
-    display: block; aspect-ratio: 16 / 10; background: var(--sunken);
-    border-bottom: 1px solid var(--line); overflow: hidden; position: relative;
+    display: block;
+    aspect-ratio: 16 / 10;
+    background: var(--sunken);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    position: relative;
   }
-  .demo-shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+  .demo-shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
   .demo-shot.none {
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--mono); font-size: 12px; color: var(--ink-3); text-align: center;
-    padding: 16px; line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-3);
+    text-align: center;
+    padding: 16px;
+    line-height: 1.6;
   }
-  .demo-body { padding: 16px 17px 17px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+  .demo-body {
+    padding: 16px 17px 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    flex: 1;
+  }
   .demo-date {
-    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--clay); margin: 0;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin: 0;
   }
-  .demo-body h3 { font-family: var(--mono); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
-  .demo-body p { margin: 0; font-size: 14px; color: var(--ink-2); flex: 1; }
-  .demo-stack { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
-  .demo-links { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 3px; }
-  .btn.small { font-size: 11.5px; padding: 6px 11px; }
-
+  .demo-body h3 {
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .demo-body p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink-2);
+    flex: 1;
+  }
+  .demo-stack {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-3);
+  }
+  .demo-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 3px;
+  }
+  .btn.small {
+    font-size: 11.5px;
+    padding: 6px 11px;
+  }
 
   /* ---------- work ---------- */
-  .work { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
-  .card {
-    background: var(--surface); border: 1px solid var(--line);
-    border-radius: var(--r); padding: 22px 22px 20px;
-    display: flex; flex-direction: column; gap: 11px;
+  .work {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
   }
-  .card .at { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clay); }
-  .card h3 { font-size: 19px; letter-spacing: -0.015em; }
-  .card p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    padding: 22px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  .card .at {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--clay);
+  }
+  .card h3 {
+    font-size: 19px;
+    letter-spacing: -0.015em;
+  }
+  .card p {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--ink-2);
+  }
   .stack {
-    font-family: var(--mono); font-size: 11.5px; color: var(--ink-3);
-    border-top: 1px dashed var(--line); padding-top: 11px; margin-top: auto; line-height: 1.7;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    border-top: 1px dashed var(--line);
+    padding-top: 11px;
+    margin-top: auto;
+    line-height: 1.7;
     overflow-wrap: anywhere;
   }
 
   /* ---------- pipeline ---------- */
-  .pipe { position: relative; padding-left: 30px; }
+  .pipe {
+    position: relative;
+    padding-left: 30px;
+  }
   .pipe::before {
-    content: ""; position: absolute; left: 5px; top: 10px; bottom: 10px;
-    width: 2px; background: var(--line);
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: var(--line);
   }
-  .stage { position: relative; padding-bottom: 38px; }
-  .stage:last-child { padding-bottom: 0; }
+  .stage {
+    position: relative;
+    padding-bottom: 38px;
+  }
+  .stage:last-child {
+    padding-bottom: 0;
+  }
   .stage::before {
-    content: ""; position: absolute; left: -30px; top: 8px;
-    width: 12px; height: 12px; border-radius: 50%;
-    background: var(--paper); border: 2px solid var(--ink-3);
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--ink-3);
   }
-  .stage.now::before { border-color: var(--clay); background: var(--clay); }
+  .stage.now::before {
+    border-color: var(--clay);
+    background: var(--clay);
+  }
   .stage .period {
-    font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.04em;
-    color: var(--ink-3); font-variant-numeric: tabular-nums;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    color: var(--ink-3);
+    font-variant-numeric: tabular-nums;
   }
-  .stage h3 { font-size: 21px; letter-spacing: -0.02em; margin-top: 4px; }
-  .stage .org { font-family: var(--body); font-weight: 600; font-size: 14.5px; color: var(--clay); margin: 3px 0 10px; }
-  .stage ul { margin: 0; padding-left: 18px; color: var(--ink-2); font-size: 14.5px; max-width: var(--measure); }
-  .stage li { margin-bottom: 5px; }
-  .stage li::marker { color: var(--ink-3); }
+  .stage h3 {
+    font-size: 21px;
+    letter-spacing: -0.02em;
+    margin-top: 4px;
+  }
+  .stage .org {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--clay);
+    margin: 3px 0 10px;
+  }
+  .stage ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--ink-2);
+    font-size: 14.5px;
+    max-width: var(--measure);
+  }
+  .stage li {
+    margin-bottom: 5px;
+  }
+  .stage li::marker {
+    color: var(--ink-3);
+  }
 
   /* ---------- toolkit ---------- */
-  .chips { display: flex; flex-wrap: wrap; gap: 7px; }
-  .chip {
-    font-family: var(--mono); font-size: 12.5px; padding: 5px 11px;
-    border: 1px solid var(--line); border-radius: 20px;
-    background: var(--surface); color: var(--ink-2);
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
   }
-  .chip.key { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .chip {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    padding: 5px 11px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--surface);
+    color: var(--ink-2);
+  }
+  .chip.key {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
 
-  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
-  .kv { font-size: 15px; }
-  .kv dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-top: 16px; }
-  .kv dd { margin: 3px 0 0; }
-  .kv dd a { word-break: break-word; }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  .kv {
+    font-size: 15px;
+  }
+  .kv dt {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-top: 16px;
+  }
+  .kv dd {
+    margin: 3px 0 0;
+  }
+  .kv dd a {
+    word-break: break-word;
+  }
 
-  footer { border-top: 1px solid var(--line); padding-block: 34px 56px; }
-  footer p { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin: 0; }
+  footer {
+    border-top: 1px solid var(--line);
+    padding-block: 34px 56px;
+  }
+  footer p {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-3);
+    margin: 0;
+  }
 
   @media (prefers-reduced-motion: reduce) {
-    * { animation: none !important; transition: none !important; }
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
   }
 </style>
 
@@ -313,29 +678,51 @@
 
 <main>
   <div class="wrap hero">
-    <p class="eyebrow">Bengaluru, India &nbsp;·&nbsp; Frontend &amp; Full Stack</p>
+    <p class="eyebrow">
+      Bengaluru, India &nbsp;·&nbsp; Frontend &amp; Full Stack
+    </p>
     <h1>Shamala Mallya</h1>
-    <p class="role">Senior Frontend Engineer with 14&nbsp;years delivering enterprise web applications.</p>
+    <p class="role">
+      Senior Frontend Engineer with 14&nbsp;years delivering enterprise web
+      applications.
+    </p>
     <p class="lede">
-      Fourteen years across the full software lifecycle — requirements through design, frontend,
-      backend services, testing and mentoring. I joined <strong>Harness</strong> as one of its first
-      frontend engineers when the India team was under 40 people, and shipped the screens behind
-      <strong>continuous deployment</strong>: rollback, blackout windows, infrastructure definitions
-      and approval gates. More recently I led customer, broker and admin portals at
-      <strong>Zeguro (HSB)</strong>, and built an MCP and RAG proof of concept that won leadership
-      backing for adopting AI in engineering.
+      Fourteen years across the full software lifecycle — requirements through
+      design, frontend, backend services, testing and mentoring. I joined
+      <strong>Harness</strong> as one of its first frontend engineers when the
+      India team was under 40 people, and shipped the screens behind
+      <strong>continuous deployment</strong>: rollback, blackout windows,
+      infrastructure definitions and approval gates. More recently I led
+      customer, broker and admin portals at <strong>Zeguro (HSB)</strong>, and
+      built an MCP and RAG proof of concept that won leadership backing for
+      adopting AI in engineering.
     </p>
 
     <div class="links">
-      <a class="btn primary" href="https://www.linkedin.com/in/b-shamala-mallya" target="_blank" rel="noopener">Connect on LinkedIn</a>
-      <a class="btn" id="gh-profile-link" href="https://github.com/Shamala" target="_blank" rel="noopener">github.com/Shamala</a>
+      <a
+        class="btn primary"
+        href="https://www.linkedin.com/in/b-shamala-mallya"
+        target="_blank"
+        rel="noopener"
+        >Connect on LinkedIn</a
+      >
+      <a
+        class="btn"
+        id="gh-profile-link"
+        href="https://github.com/Shamala"
+        target="_blank"
+        rel="noopener"
+        >github.com/Shamala</a
+      >
     </div>
 
     <div class="facts">
       <div class="fact"><b>14+</b><span>Years shipping</span></div>
       <div class="fact"><b>6</b><span>Engineering orgs</span></div>
       <div class="fact"><b>80%</b><span>Jest coverage held</span></div>
-      <div class="fact"><b>4mo</b><span>Legacy ASPX → Angular rebuild</span></div>
+      <div class="fact">
+        <b>4mo</b><span>Legacy ASPX → Angular rebuild</span>
+      </div>
     </div>
   </div>
 
@@ -347,89 +734,217 @@
         <span class="count" id="repo-count">github.com/Shamala</span>
       </div>
       <p class="sec-sub">
-        Five of these are built and deployed — open any preview to use the running app.
-        The full list below reads the GitHub API directly, so it stays current on its own.
+        Five of these are built and deployed — open any preview to use the
+        running app. The full list below reads the GitHub API directly, so it
+        stays current on its own.
       </p>
 
       <p class="subhead">Live demos</p>
       <div class="demos">
-      <article class="demo">
-        <a class="demo-shot" href="https://shamala.github.io/ColorDetector/" target="_blank" rel="noopener">
-          <img src="previews/colordetector.jpg" alt="Screenshot of the ColorDetector app running" loading="lazy" width="900" height="562">
-        </a>
-        <div class="demo-body">
-          <p class="demo-date">Created August 2026</p>
-          <h3>ColorDetector</h3>
-          <p>Type a CSS colour name and the swatch resolves live to its hex value, with a debounce hook throttling the lookup and a control to flip the label between light and dark.</p>
-          <p class="demo-stack">React 19 · Vite · custom hooks</p>
-          <div class="demo-links">
-            <a class="btn small primary" href="https://shamala.github.io/ColorDetector/" target="_blank" rel="noopener">Live demo</a>
-            <a class="btn small" href="https://github.com/Shamala/ColorDetector" target="_blank" rel="noopener">Source</a>
+        <article class="demo">
+          <a
+            class="demo-shot"
+            href="https://shamala.github.io/ColorDetector/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="previews/colordetector.jpg"
+              alt="Screenshot of the ColorDetector app running"
+              loading="lazy"
+              width="900"
+              height="562"
+            />
+          </a>
+          <div class="demo-body">
+            <p class="demo-date">Created August 2026</p>
+            <h3>ColorDetector</h3>
+            <p>
+              Type a CSS colour name and the swatch resolves live to its hex
+              value, with a debounce hook throttling the lookup and a control to
+              flip the label between light and dark.
+            </p>
+            <p class="demo-stack">React 19 · Vite · custom hooks</p>
+            <div class="demo-links">
+              <a
+                class="btn small primary"
+                href="https://shamala.github.io/ColorDetector/"
+                target="_blank"
+                rel="noopener"
+                >Live demo</a
+              >
+              <a
+                class="btn small"
+                href="https://github.com/Shamala/ColorDetector"
+                target="_blank"
+                rel="noopener"
+                >Source</a
+              >
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="demo">
-        <a class="demo-shot" href="https://shamala.github.io/typescript-cart/" target="_blank" rel="noopener">
-          <img src="previews/typescript-cart.jpg" alt="Screenshot of the typescript-cart app running" loading="lazy" width="900" height="562">
-        </a>
-        <div class="demo-body">
-          <p class="demo-date">Created May 2023</p>
-          <h3>typescript-cart</h3>
-          <p>A typed storefront: product grid, add-to-cart, and a running item count and order total in the header. Cart state runs through a reducer behind a typed context.</p>
-          <p class="demo-stack">React 18 · TypeScript · Context + useReducer · Vite</p>
-          <div class="demo-links">
-            <a class="btn small primary" href="https://shamala.github.io/typescript-cart/" target="_blank" rel="noopener">Live demo</a>
-            <a class="btn small" href="https://github.com/Shamala/typescript-cart" target="_blank" rel="noopener">Source</a>
+        <article class="demo">
+          <a
+            class="demo-shot"
+            href="https://shamala.github.io/typescript-cart/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="previews/typescript-cart.jpg"
+              alt="Screenshot of the typescript-cart app running"
+              loading="lazy"
+              width="900"
+              height="562"
+            />
+          </a>
+          <div class="demo-body">
+            <p class="demo-date">Created May 2023</p>
+            <h3>typescript-cart</h3>
+            <p>
+              A typed storefront: product grid, add-to-cart, and a running item
+              count and order total in the header. Cart state runs through a
+              reducer behind a typed context.
+            </p>
+            <p class="demo-stack">
+              React 18 · TypeScript · Context + useReducer · Vite
+            </p>
+            <div class="demo-links">
+              <a
+                class="btn small primary"
+                href="https://shamala.github.io/typescript-cart/"
+                target="_blank"
+                rel="noopener"
+                >Live demo</a
+              >
+              <a
+                class="btn small"
+                href="https://github.com/Shamala/typescript-cart"
+                target="_blank"
+                rel="noopener"
+                >Source</a
+              >
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="demo">
-        <span class="demo-shot none">Preview not captured —<br>open the live demo</span>
-        <div class="demo-body">
-          <p class="demo-date">Created March 2023</p>
-          <h3>robo-friends</h3>
-          <p>Searchable directory of generated robot avatars — the classic exercise in lifting state up and filtering a rendered list as you type.</p>
-          <p class="demo-stack">React 18 · Create React App</p>
-          <div class="demo-links">
-            <a class="btn small primary" href="https://shamala.github.io/robo-friends/" target="_blank" rel="noopener">Live demo</a>
-            <a class="btn small" href="https://github.com/Shamala/robo-friends" target="_blank" rel="noopener">Source</a>
+        <article class="demo">
+          <span class="demo-shot none"
+            >Preview not captured —<br />open the live demo</span
+          >
+          <div class="demo-body">
+            <p class="demo-date">Created March 2023</p>
+            <h3>robo-friends</h3>
+            <p>
+              Searchable directory of generated robot avatars — the classic
+              exercise in lifting state up and filtering a rendered list as you
+              type.
+            </p>
+            <p class="demo-stack">React 18 · Create React App</p>
+            <div class="demo-links">
+              <a
+                class="btn small primary"
+                href="https://shamala.github.io/robo-friends/"
+                target="_blank"
+                rel="noopener"
+                >Live demo</a
+              >
+              <a
+                class="btn small"
+                href="https://github.com/Shamala/robo-friends"
+                target="_blank"
+                rel="noopener"
+                >Source</a
+              >
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="demo">
-        <a class="demo-shot" href="https://shamala.github.io/Tailwindcss-Project/" target="_blank" rel="noopener">
-          <img src="previews/tailwindcss-project.jpg" alt="Screenshot of the Tailwindcss-Project app running" loading="lazy" width="900" height="562">
-        </a>
-        <div class="demo-body">
-          <p class="demo-date">Created February 2023</p>
-          <h3>Tailwindcss-Project</h3>
-          <p>Acme Rockets — a responsive marketing page built on Tailwind, with a sticky nav, product sections, testimonials and a contact form.</p>
-          <p class="demo-stack">Tailwind CSS · static build</p>
-          <div class="demo-links">
-            <a class="btn small primary" href="https://shamala.github.io/Tailwindcss-Project/" target="_blank" rel="noopener">Live demo</a>
-            <a class="btn small" href="https://github.com/Shamala/Tailwindcss-Project" target="_blank" rel="noopener">Source</a>
+        <article class="demo">
+          <a
+            class="demo-shot"
+            href="https://shamala.github.io/Tailwindcss-Project/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="previews/tailwindcss-project.jpg"
+              alt="Screenshot of the Tailwindcss-Project app running"
+              loading="lazy"
+              width="900"
+              height="562"
+            />
+          </a>
+          <div class="demo-body">
+            <p class="demo-date">Created February 2023</p>
+            <h3>Tailwindcss-Project</h3>
+            <p>
+              Acme Rockets — a responsive marketing page built on Tailwind, with
+              a sticky nav, product sections, testimonials and a contact form.
+            </p>
+            <p class="demo-stack">Tailwind CSS · static build</p>
+            <div class="demo-links">
+              <a
+                class="btn small primary"
+                href="https://shamala.github.io/Tailwindcss-Project/"
+                target="_blank"
+                rel="noopener"
+                >Live demo</a
+              >
+              <a
+                class="btn small"
+                href="https://github.com/Shamala/Tailwindcss-Project"
+                target="_blank"
+                rel="noopener"
+                >Source</a
+              >
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="demo">
-        <a class="demo-shot" href="https://shamala.github.io/background-generator/" target="_blank" rel="noopener">
-          <img src="previews/background-generator.jpg" alt="Screenshot of the background-generator app running" loading="lazy" width="900" height="562">
-        </a>
-        <div class="demo-body">
-          <p class="demo-date">Created March 2023</p>
-          <h3>background-generator</h3>
-          <p>Two colour inputs drive a live CSS gradient across the page, and the generated linear-gradient rule is printed underneath ready to copy.</p>
-          <p class="demo-stack">Vanilla JS · Browserify</p>
-          <div class="demo-links">
-            <a class="btn small primary" href="https://shamala.github.io/background-generator/" target="_blank" rel="noopener">Live demo</a>
-            <a class="btn small" href="https://github.com/Shamala/background-generator" target="_blank" rel="noopener">Source</a>
+        <article class="demo">
+          <a
+            class="demo-shot"
+            href="https://shamala.github.io/background-generator/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="previews/background-generator.jpg"
+              alt="Screenshot of the background-generator app running"
+              loading="lazy"
+              width="900"
+              height="562"
+            />
+          </a>
+          <div class="demo-body">
+            <p class="demo-date">Created March 2023</p>
+            <h3>background-generator</h3>
+            <p>
+              Two colour inputs drive a live CSS gradient across the page, and
+              the generated linear-gradient rule is printed underneath ready to
+              copy.
+            </p>
+            <p class="demo-stack">Vanilla JS · Browserify</p>
+            <div class="demo-links">
+              <a
+                class="btn small primary"
+                href="https://shamala.github.io/background-generator/"
+                target="_blank"
+                rel="noopener"
+                >Live demo</a
+              >
+              <a
+                class="btn small"
+                href="https://github.com/Shamala/background-generator"
+                target="_blank"
+                rel="noopener"
+                >Source</a
+              >
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
       </div>
 
       <p class="subhead later">Other repositories</p>
@@ -437,33 +952,84 @@
       <div class="gh-note" id="gh-note">
         <span class="dot" aria-hidden="true"></span>
         <div id="gh-note-text">
-          Showing repository names and dates only. Descriptions, languages and stars load from the
-          GitHub API once this page is hosted — preview sandboxes block that call.
+          Showing repository names and dates only. Descriptions, languages and
+          stars load from the GitHub API once this page is hosted — preview
+          sandboxes block that call.
         </div>
       </div>
 
       <div class="repos" id="repos">
-        <a class="repo ghost" href="https://github.com/Shamala/DailyLight" target="_blank" rel="noopener">
+        <a
+          class="repo ghost"
+          href="https://github.com/Shamala/typesafe-smart-inbox"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="repo-name">typesafe-smart-inbox</span>
+          <p class="repo-desc">
+            Demonstrates how TypeSafe’s Jev model works — intelligent email
+            prioritization and triage using System One decision primitives.
+          </p>
+          <div class="repo-meta"><span>pushed Sep 2026</span></div>
+        </a>
+        <a
+          class="repo ghost"
+          href="https://github.com/Shamala/Shamala.github.io"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="repo-name">Shamala.github.io</span>
+          <p class="repo-desc">
+            Personal portfolio website showcasing engineering experience, featured projects, and live demos.
+          </p>
+          <div class="repo-meta"><span>pushed Sep 2026</span></div>
+        </a>
+        <a
+          class="repo ghost"
+          href="https://github.com/Shamala/DailyLight"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="repo-name">DailyLight</span>
           <p class="repo-desc">Description loads live.</p>
           <div class="repo-meta"><span>pushed Sep 2026</span></div>
         </a>
-        <a class="repo ghost" href="https://github.com/Shamala/LearningLangChain" target="_blank" rel="noopener">
+        <a
+          class="repo ghost"
+          href="https://github.com/Shamala/LearningLangChain"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="repo-name">LearningLangChain</span>
           <p class="repo-desc">Description loads live.</p>
           <div class="repo-meta"><span>pushed May 2025</span></div>
         </a>
-        <a class="repo ghost" href="https://github.com/Shamala/NestJs" target="_blank" rel="noopener">
+        <a
+          class="repo ghost"
+          href="https://github.com/Shamala/NestJs"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="repo-name">NestJs</span>
           <p class="repo-desc">Description loads live.</p>
           <div class="repo-meta"><span>pushed Apr 2024</span></div>
         </a>
-        <a class="repo ghost" href="https://github.com/Shamala/techNotes-project-frontend" target="_blank" rel="noopener">
+        <a
+          class="repo ghost"
+          href="https://github.com/Shamala/techNotes-project-frontend"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="repo-name">techNotes-project-frontend</span>
           <p class="repo-desc">Description loads live.</p>
           <div class="repo-meta"><span>pushed Feb 2023</span></div>
         </a>
-        <a class="repo ghost" href="https://github.com/Shamala/image-recognition-app" target="_blank" rel="noopener">
+        <a
+          class="repo ghost"
+          href="https://github.com/Shamala/image-recognition-app"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="repo-name">image-recognition-app</span>
           <p class="repo-desc">Description loads live.</p>
           <div class="repo-meta"><span>pushed Mar 2023</span></div>
@@ -479,89 +1045,147 @@
         <h2>Selected work</h2>
         <span class="count">9 projects</span>
       </div>
-      <p class="sec-sub">Features I owned end to end, with the stack each was actually built on.</p>
+      <p class="sec-sub">
+        Features I owned end to end, with the stack each was actually built on.
+      </p>
 
       <div class="work">
         <article class="card">
           <span class="at">Zeguro (HSB)</span>
           <h3>Customer, broker &amp; admin portals</h3>
-          <p>Four surfaces onto the same cyber-insurance data. I managed features, upgrades and regressions
-             across all of them, shipping Cyber Maturity and Cyber Concierge, and supervised external
-             development sprints through task delegation, code vetting and QA handoff.</p>
-          <p class="stack">React 17/18 · TypeScript · Redux · React-Router · NestJS · Node.js · Styled Components</p>
+          <p>
+            Four surfaces onto the same cyber-insurance data. I managed
+            features, upgrades and regressions across all of them, shipping
+            Cyber Maturity and Cyber Concierge, and supervised external
+            development sprints through task delegation, code vetting and QA
+            handoff.
+          </p>
+          <p class="stack">
+            React 17/18 · TypeScript · Redux · React-Router · NestJS · Node.js ·
+            Styled Components
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Zeguro (HSB)</span>
           <h3>Shared component library &amp; lint toolchain</h3>
-          <p>Worked with design to standardise the org's components and styles, then shipped them as a
-             unit-tested library used across every application — alongside an npm package carrying the shared
-             ESLint and Prettier config, applied everywhere.</p>
-          <p class="stack">React 18 · TypeScript · Styled Components · Jest · npm · ESLint · Prettier</p>
+          <p>
+            Worked with design to standardise the org's components and styles,
+            then shipped them as a unit-tested library used across every
+            application — alongside an npm package carrying the shared ESLint
+            and Prettier config, applied everywhere.
+          </p>
+          <p class="stack">
+            React 18 · TypeScript · Styled Components · Jest · npm · ESLint ·
+            Prettier
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Zeguro (HSB)</span>
           <h3>MCP &amp; RAG proof of concept</h3>
-          <p>A proof of concept pairing a Model Context Protocol server with RAG workflows, showing how the
-             Concierge service could correlate data across sources, alongside a prototype web app for reaching
-             the customer knowledge base. Built to demonstrate what AI could do rather than to ship — the
-             case it made secured leadership sign-off for adopting AI in engineering.</p>
-          <p class="stack">Model Context Protocol · RAG · Node.js · TypeScript</p>
+          <p>
+            A proof of concept pairing a Model Context Protocol server with RAG
+            workflows, showing how the Concierge service could correlate data
+            across sources, alongside a prototype web app for reaching the
+            customer knowledge base. Built to demonstrate what AI could do
+            rather than to ship — the case it made secured leadership sign-off
+            for adopting AI in engineering.
+          </p>
+          <p class="stack">
+            Model Context Protocol · RAG · Node.js · TypeScript
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Harness</span>
           <h3>ServiceNow, Jira &amp; Harness approval gates</h3>
-          <p>Approval steps in the NextGen UI can route through any ticketing system. I built the ticket
-             creation and update interfaces for ServiceNow, Jira and Harness approvals — delivered as micro
-             frontends, the architecture NextGen adopted as the product expanded across CI and CV.</p>
-          <p class="stack">React 18 · TypeScript · Micro frontends · Formik · React-Router · Jest · Webpack · SASS</p>
+          <p>
+            Approval steps in the NextGen UI can route through any ticketing
+            system. I built the ticket creation and update interfaces for
+            ServiceNow, Jira and Harness approvals — delivered as micro
+            frontends, the architecture NextGen adopted as the product expanded
+            across CI and CV.
+          </p>
+          <p class="stack">
+            React 18 · TypeScript · Micro frontends · Formik · React-Router ·
+            Jest · Webpack · SASS
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Harness</span>
           <h3>Blackout window configuration</h3>
-          <p>Deployments were gated by user access, but not by time. I built the module end to end — every page
-             for defining windows that disable deploy, rollback and rerun across all configured
-             applications, services and workflows — then updated every deployment entry point to check the
-             feature flag and validate whether a deploy was allowed.</p>
-          <p class="stack">React 16+ · TypeScript · MobX · Formik · React-Router · Jest · Babel · SASS · ES6</p>
+          <p>
+            Deployments were gated by user access, but not by time. I built the
+            module end to end — every page for defining windows that disable
+            deploy, rollback and rerun across all configured applications,
+            services and workflows — then updated every deployment entry point
+            to check the feature flag and validate whether a deploy was allowed.
+          </p>
+          <p class="stack">
+            React 16+ · TypeScript · MobX · Formik · React-Router · Jest · Babel
+            · SASS · ES6
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Harness</span>
           <h3>Rollback deployment</h3>
-          <p>In 2019 a rollback meant hand-building a pipeline that mimicked one. I built the feature that
-             turned it into a button — rolling back an active deployment or a deployed pipeline across every
-             screen, plus the admin-level global rollback on Service Overview, working directly with the backend team.</p>
-          <p class="stack">React 15.x · TypeScript · MobX · Formik · React-Router · Jest · Webpack · Babel · SASS · ES6</p>
+          <p>
+            In 2019 a rollback meant hand-building a pipeline that mimicked one.
+            I built the feature that turned it into a button — rolling back an
+            active deployment or a deployed pipeline across every screen, plus
+            the admin-level global rollback on Service Overview, working
+            directly with the backend team.
+          </p>
+          <p class="stack">
+            React 15.x · TypeScript · MobX · Formik · React-Router · Jest ·
+            Webpack · Babel · SASS · ES6
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Harness</span>
           <h3>Infrastructure definition</h3>
-          <p>Every application deploys through a Service, Environment, Workflow and Pipeline. I built the new
-             pages for defining the infrastructure each service runs on, and for feeding those definitions into
-             the workflows and pipelines downstream.</p>
-          <p class="stack">React 15.x · TypeScript · MobX · Formik · React-Router · Jest · Webpack · SASS · ES6</p>
+          <p>
+            Every application deploys through a Service, Environment, Workflow
+            and Pipeline. I built the new pages for defining the infrastructure
+            each service runs on, and for feeding those definitions into the
+            workflows and pipelines downstream.
+          </p>
+          <p class="stack">
+            React 15.x · TypeScript · MobX · Formik · React-Router · Jest ·
+            Webpack · SASS · ES6
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Morgan Stanley</span>
           <h3>Debit card &amp; check ordering</h3>
-          <p>A ten-year-old classic ASPX system for AAA Banking, rebuilt as an AngularJS application in just
-             over four months. I designed the data models and built the front end, acting as SME for the
-             product in Bangalore through full-lifecycle development and production releases.</p>
-          <p class="stack">AngularJS · JavaScript · Bootstrap · SASS · Web API · WCF · C#</p>
+          <p>
+            A ten-year-old classic ASPX system for AAA Banking, rebuilt as an
+            AngularJS application in just over four months. I designed the data
+            models and built the front end, acting as SME for the product in
+            Bangalore through full-lifecycle development and production
+            releases.
+          </p>
+          <p class="stack">
+            AngularJS · JavaScript · Bootstrap · SASS · Web API · WCF · C#
+          </p>
         </article>
 
         <article class="card">
           <span class="at">Morgan Stanley</span>
           <h3>Self-authorisation of ACH &amp; checks</h3>
-          <p>A new platform letting customers self-authorise ACH and check transactions. I designed the data
-             models for extensibility and developed the front end against WCF services and SQL Server.</p>
-          <p class="stack">Angular 1.4 · JavaScript · MVC · WCF · C# · SQL Server</p>
+          <p>
+            A new platform letting customers self-authorise ACH and check
+            transactions. I designed the data models for extensibility and
+            developed the front end against WCF services and SQL Server.
+          </p>
+          <p class="stack">
+            Angular 1.4 · JavaScript · MVC · WCF · C# · SQL Server
+          </p>
         </article>
       </div>
     </div>
@@ -574,7 +1198,10 @@
         <h2>Experience</h2>
         <span class="count">2010 → 2025</span>
       </div>
-      <p class="sec-sub">Six organisations across insurance, banking, observability, devops and building systems — five in Bengaluru, one in San Francisco.</p>
+      <p class="sec-sub">
+        Six organisations across insurance, banking, observability, devops and
+        building systems — five in Bengaluru, one in San Francisco.
+      </p>
 
       <div class="pipe">
         <article class="stage now">
@@ -582,10 +1209,25 @@
           <h3>Senior Application Developer (L7)</h3>
           <p class="org">Zeguro (HSB) · San Francisco, USA</p>
           <ul>
-            <li>Led development and maintenance of the customer-facing Cyber Maturity and Cyber Concierge portals, admin interfaces, broker portals and internal database tooling.</li>
-            <li>Standardised front-end workflows across the org with shared ESLint/Prettier configs, Bitbucket review workflows and pre-QA design handoffs.</li>
-            <li>Built a shared, unit-tested component library for consistency across applications.</li>
-            <li>Built an MCP server and RAG workflows as a proof of concept, demonstrating what AI could do for legacy applications and winning leadership sign-off for adopting AI in engineering.</li>
+            <li>
+              Led development and maintenance of the customer-facing Cyber
+              Maturity and Cyber Concierge portals, admin interfaces, broker
+              portals and internal database tooling.
+            </li>
+            <li>
+              Standardised front-end workflows across the org with shared
+              ESLint/Prettier configs, Bitbucket review workflows and pre-QA
+              design handoffs.
+            </li>
+            <li>
+              Built a shared, unit-tested component library for consistency
+              across applications.
+            </li>
+            <li>
+              Built an MCP server and RAG workflows as a proof of concept,
+              demonstrating what AI could do for legacy applications and winning
+              leadership sign-off for adopting AI in engineering.
+            </li>
           </ul>
         </article>
 
@@ -594,9 +1236,15 @@
           <h3>Senior Developer II</h3>
           <p class="org">Harness.io · Bengaluru, India</p>
           <ul>
-            <li>One of the first frontend developers at Harness India, joining under 40 employees — now over 300.</li>
+            <li>
+              One of the first frontend developers at Harness India, joining
+              under 40 employees — now over 300.
+            </li>
             <li>Key contributor to the Continuous Deployment feature.</li>
-            <li>Implemented comprehensive unit and integration tests with Jest and Cypress, holding coverage from 60% up to 80%.</li>
+            <li>
+              Implemented comprehensive unit and integration tests with Jest and
+              Cypress, holding coverage from 60% up to 80%.
+            </li>
             <li>Ran regular code reviews and mentored junior developers.</li>
           </ul>
         </article>
@@ -606,8 +1254,14 @@
           <h3>SDE III</h3>
           <p class="org">AppDynamics · Bengaluru, India</p>
           <ul>
-            <li>Primary front-end engineer and point of contact for the Database Monitoring (DBMon) application.</li>
-            <li>Built new UI features, handled enhancement requests, wrote component-level tests and reviewed code.</li>
+            <li>
+              Primary front-end engineer and point of contact for the Database
+              Monitoring (DBMon) application.
+            </li>
+            <li>
+              Built new UI features, handled enhancement requests, wrote
+              component-level tests and reviewed code.
+            </li>
           </ul>
         </article>
 
@@ -616,9 +1270,18 @@
           <h3>Manager</h3>
           <p class="org">Morgan Stanley · Bengaluru, India</p>
           <ul>
-            <li>Subject Matter Expert for AAA Banking in Bangalore, overseeing full-lifecycle development and production releases.</li>
-            <li>Modernised a 10-year-old legacy ASPX system into AngularJS and Bootstrap for debit card and check ordering, in four months.</li>
-            <li>Designed extensible data models and built the front end for the self-authorisation of ACH and check transactions.</li>
+            <li>
+              Subject Matter Expert for AAA Banking in Bangalore, overseeing
+              full-lifecycle development and production releases.
+            </li>
+            <li>
+              Modernised a 10-year-old legacy ASPX system into AngularJS and
+              Bootstrap for debit card and check ordering, in four months.
+            </li>
+            <li>
+              Designed extensible data models and built the front end for the
+              self-authorisation of ACH and check transactions.
+            </li>
           </ul>
         </article>
 
@@ -627,8 +1290,14 @@
           <h3>Senior Developer</h3>
           <p class="org">AirWatch (VMware) · Bengaluru, India</p>
           <ul>
-            <li>Full-stack development toward mobile device management of Windows devices.</li>
-            <li>Built a Windows application that remotely initiated full-device encryption on laptops.</li>
+            <li>
+              Full-stack development toward mobile device management of Windows
+              devices.
+            </li>
+            <li>
+              Built a Windows application that remotely initiated full-device
+              encryption on laptops.
+            </li>
           </ul>
         </article>
 
@@ -637,8 +1306,16 @@
           <h3>Senior Developer</h3>
           <p class="org">Honeywell Inc · Bengaluru, India</p>
           <ul>
-            <li>Built full-stack ASP.NET and C# applications for Honeywell Building Solutions — a 3-tier cardholder management system on the MVP pattern, and e-Cylinder lock integration with Enterprise Building Integrator.</li>
-            <li>Wrote unit and integration tests alongside development, and mentored new team members through onboarding.</li>
+            <li>
+              Built full-stack ASP.NET and C# applications for Honeywell
+              Building Solutions — a 3-tier cardholder management system on the
+              MVP pattern, and e-Cylinder lock integration with Enterprise
+              Building Integrator.
+            </li>
+            <li>
+              Wrote unit and integration tests alongside development, and
+              mentored new team members through onboarding.
+            </li>
           </ul>
         </article>
       </div>
@@ -687,13 +1364,26 @@
   <section id="contact">
     <div class="wrap">
       <div class="sec-head"><h2>Get in touch</h2></div>
-      <p class="sec-sub">LinkedIn is the fastest way to reach me — I read messages there.</p>
+      <p class="sec-sub">
+        LinkedIn is the fastest way to reach me — I read messages there.
+      </p>
       <div class="grid-2">
         <dl class="kv">
           <dt>LinkedIn</dt>
-          <dd><a href="https://www.linkedin.com/in/b-shamala-mallya" target="_blank" rel="noopener">in/b-shamala-mallya</a></dd>
+          <dd>
+            <a
+              href="https://www.linkedin.com/in/b-shamala-mallya"
+              target="_blank"
+              rel="noopener"
+              >in/b-shamala-mallya</a
+            >
+          </dd>
           <dt>GitHub</dt>
-          <dd><a href="https://github.com/Shamala" target="_blank" rel="noopener">github.com/Shamala</a></dd>
+          <dd>
+            <a href="https://github.com/Shamala" target="_blank" rel="noopener"
+              >github.com/Shamala</a
+            >
+          </dd>
           <dt>Location</dt>
           <dd>Bengaluru, India</dd>
         </dl>
@@ -720,24 +1410,48 @@
   // Repos to float to the front, in this order. Everything else follows by
   // most-recent push. Reorder freely.
   const PINNED = [
+    "typesafe-smart-inbox",
+    "Shamala.github.io",
     "DailyLight",
     "ColorDetector",
     "LearningLangChain",
     "NestJs",
     "techNotes-project-frontend",
-    "image-recognition-app"
+    "image-recognition-app",
   ];
   // Repo names to keep off the page entirely.
   // Shown as Live demos above, so kept out of the grid below.
-  const HIDDEN = ["ColorDetector", "typescript-cart", "robo-friends",
-                  "Tailwindcss-Project", "background-generator"];
+  const HIDDEN = [
+    "ColorDetector",
+    "typescript-cart",
+    "robo-friends",
+    "Tailwindcss-Project",
+    "background-generator",
+  ];
   const MAX_REPOS = 12;
+  // Fallback descriptions for repositories that do not have one set on GitHub.
+  const REPO_DESCRIPTIONS = {
+    "typesafe-smart-inbox":
+      "Demonstrates how TypeSafe’s Jev model works — intelligent email prioritization and triage using System One decision primitives.",
+    "Shamala.github.io":
+      "Personal portfolio website showcasing engineering experience, featured projects, and live demos.",
+  };
   // ────────────────────────────────────────────────────────────────────────
 
   const LANG_COLORS = {
-    JavaScript: "#f1e05a", TypeScript: "#3178c6", HTML: "#e34c26", CSS: "#563d7c",
-    Python: "#3572A5", "C#": "#178600", Java: "#b07219", Shell: "#89e051",
-    Vue: "#41b883", SCSS: "#c6538c", Go: "#00ADD8", Ruby: "#701516", Rust: "#dea584"
+    JavaScript: "#f1e05a",
+    TypeScript: "#3178c6",
+    HTML: "#e34c26",
+    CSS: "#563d7c",
+    Python: "#3572A5",
+    "C#": "#178600",
+    Java: "#b07219",
+    Shell: "#89e051",
+    Vue: "#41b883",
+    SCSS: "#c6538c",
+    Go: "#00ADD8",
+    Ruby: "#701516",
+    Rust: "#dea584",
   };
 
   const reposEl = document.getElementById("repos");
@@ -746,8 +1460,18 @@
   const countEl = document.getElementById("repo-count");
   const profileLink = document.getElementById("gh-profile-link");
 
-  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g,
-    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const esc = (s) =>
+    String(s == null ? "" : s).replace(
+      /[&<>"']/g,
+      (c) =>
+        ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        })[c],
+    );
 
   function since(iso) {
     const d = new Date(iso);
@@ -766,25 +1490,54 @@
   }
 
   function renderRepos(list) {
-    reposEl.innerHTML = list.map(function (r) {
-      const color = LANG_COLORS[r.language] || "var(--ink-3)";
-      const topics = (r.topics || []).slice(0, 4)
-        .map((t) => '<span class="topic">' + esc(t) + "</span>").join("");
-      return '<a class="repo" href="' + esc(r.html_url) + '" target="_blank" rel="noopener">' +
-        '<span class="repo-name">' + esc(r.name) + "</span>" +
-        '<p class="repo-desc">' + esc(r.description || "No description yet.") + "</p>" +
-        (topics ? '<div class="topics">' + topics + "</div>" : "") +
-        '<div class="repo-meta">' +
-          (r.language ? '<span class="lang"><i style="background:' + color + '"></i>' + esc(r.language) + "</span>" : "") +
-          "<span>★ " + (r.stargazers_count || 0) + "</span>" +
-          "<span>created " + created(r.created_at) + "</span>" +
-          "<span>updated " + since(r.pushed_at) + "</span>" +
-        "</div></a>";
-    }).join("");
+    reposEl.innerHTML = list
+      .map(function (r) {
+        const color = LANG_COLORS[r.language] || "var(--ink-3)";
+        const topics = (r.topics || [])
+          .slice(0, 4)
+          .map((t) => '<span class="topic">' + esc(t) + "</span>")
+          .join("");
+        const desc =
+          r.description || REPO_DESCRIPTIONS[r.name] || "No description yet.";
+        return (
+          '<a class="repo" href="' +
+          esc(r.html_url) +
+          '" target="_blank" rel="noopener">' +
+          '<span class="repo-name">' +
+          esc(r.name) +
+          "</span>" +
+          '<p class="repo-desc">' +
+          esc(desc) +
+          "</p>" +
+          (topics ? '<div class="topics">' + topics + "</div>" : "") +
+          '<div class="repo-meta">' +
+          (r.language
+            ? '<span class="lang"><i style="background:' +
+              color +
+              '"></i>' +
+              esc(r.language) +
+              "</span>"
+            : "") +
+          "<span>★ " +
+          (r.stargazers_count || 0) +
+          "</span>" +
+          "<span>created " +
+          created(r.created_at) +
+          "</span>" +
+          "<span>updated " +
+          since(r.pushed_at) +
+          "</span>" +
+          "</div></a>"
+        );
+      })
+      .join("");
   }
 
   function setNote(html) {
-    if (!html) { noteEl.hidden = true; return; }
+    if (!html) {
+      noteEl.hidden = true;
+      return;
+    }
     noteEl.hidden = false;
     noteText.innerHTML = html;
   }
@@ -796,10 +1549,18 @@
     profileLink.rel = "noopener";
     setNote("Loading repositories for <code>" + esc(user) + "</code>…");
 
-    fetch("https://api.github.com/users/" + encodeURIComponent(user) + "/repos?per_page=100&sort=updated")
+    fetch(
+      "https://api.github.com/users/" +
+        encodeURIComponent(user) +
+        "/repos?per_page=100&sort=updated",
+    )
       .then(function (res) {
-        if (res.status === 404) throw new Error("No GitHub user called “" + user + "”.");
-        if (res.status === 403) throw new Error("GitHub rate-limited this browser. Try again in a few minutes.");
+        if (res.status === 404)
+          throw new Error("No GitHub user called “" + user + "”.");
+        if (res.status === 403)
+          throw new Error(
+            "GitHub rate-limited this browser. Try again in a few minutes.",
+          );
         if (!res.ok) throw new Error("GitHub returned " + res.status + ".");
         return res.json();
       })
@@ -808,11 +1569,16 @@
           return !r.fork && !r.archived && HIDDEN.indexOf(r.name) < 0;
         });
         if (!repos.length) {
-          setNote("<code>" + esc(user) + "</code> has no public, non-forked repositories yet.");
+          setNote(
+            "<code>" +
+              esc(user) +
+              "</code> has no public, non-forked repositories yet.",
+          );
           return;
         }
         repos.sort(function (a, b) {
-          const pa = PINNED.indexOf(a.name), pb = PINNED.indexOf(b.name);
+          const pa = PINNED.indexOf(a.name),
+            pb = PINNED.indexOf(b.name);
           if (pa !== pb) return (pa < 0 ? 99 : pa) - (pb < 0 ? 99 : pb);
           return new Date(b.pushed_at) - new Date(a.pushed_at);
         });
@@ -821,9 +1587,12 @@
         noteEl.hidden = true;
       })
       .catch(function (err) {
-        setNote("<strong>Showing placeholders.</strong> " + esc(err.message) +
-          " The live grid works once this page is hosted (GitHub Pages, Netlify, your own domain) — " +
-          "preview sandboxes block calls to the GitHub API.");
+        setNote(
+          "<strong>Showing placeholders.</strong> " +
+            esc(err.message) +
+            " The live grid works once this page is hosted (GitHub Pages, Netlify, your own domain) — " +
+            "preview sandboxes block calls to the GitHub API.",
+        );
       });
   }
 
