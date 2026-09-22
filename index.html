@@ -734,13 +734,50 @@
         <span class="count" id="repo-count">github.com/Shamala</span>
       </div>
       <p class="sec-sub">
-        Five of these are built and deployed — open any preview to use the
-        running app. The full list below reads the GitHub API directly, so it
-        stays current on its own.
+        Featured projects and running apps — open any preview to explore. The
+        full list below reads the GitHub API directly, so it stays current on its
+        own.
       </p>
 
-      <p class="subhead">Live demos</p>
+      <p class="subhead">Featured projects &amp; demos</p>
       <div class="demos">
+        <article class="demo">
+          <a
+            class="demo-shot"
+            href="https://github.com/Shamala/typesafe-smart-inbox"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="previews/typesafe-smart-inbox.jpg"
+              alt="Screenshot of the typesafe-smart-inbox app running"
+              loading="lazy"
+              width="900"
+              height="562"
+            />
+          </a>
+          <div class="demo-body">
+            <p class="demo-date">Created September 2026</p>
+            <h3>typesafe-smart-inbox</h3>
+            <p>
+              Demonstrates how TypeSafe’s Jev model works — intelligent email
+              prioritization and triage using System One decision primitives
+              (Choice, Score, Noul).
+            </p>
+            <p class="demo-stack">
+              NestJS · TypeScript · TypeSafe System One · Jev
+            </p>
+            <div class="demo-links">
+              <a
+                class="btn small primary"
+                href="https://github.com/Shamala/typesafe-smart-inbox"
+                target="_blank"
+                rel="noopener"
+                >Source</a
+              >
+            </div>
+          </div>
+        </article>
         <article class="demo">
           <a
             class="demo-shot"
@@ -959,19 +996,6 @@
       </div>
 
       <div class="repos" id="repos">
-        <a
-          class="repo ghost"
-          href="https://github.com/Shamala/typesafe-smart-inbox"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="repo-name">typesafe-smart-inbox</span>
-          <p class="repo-desc">
-            Demonstrates how TypeSafe’s Jev model works — intelligent email
-            prioritization and triage using System One decision primitives.
-          </p>
-          <div class="repo-meta"><span>pushed Sep 2026</span></div>
-        </a>
         <a
           class="repo ghost"
           href="https://github.com/Shamala/Shamala.github.io"
@@ -1411,7 +1435,6 @@
   // Repos to float to the front, in this order. Everything else follows by
   // most-recent push. Reorder freely.
   const PINNED = [
-    "typesafe-smart-inbox",
     "Shamala.github.io",
     "DailyLight",
     "ColorDetector",
@@ -1423,6 +1446,7 @@
   // Repo names to keep off the page entirely.
   // Shown as Live demos above, so kept out of the grid below.
   const HIDDEN = [
+    "typesafe-smart-inbox",
     "ColorDetector",
     "typescript-cart",
     "robo-friends",
