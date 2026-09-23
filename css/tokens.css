@@ -1,0 +1,57 @@
+/* Design tokens: colour, type and spacing. Dark values are declared twice —
+   once for the OS preference, once for an explicit data-theme override. */
+
+:root {
+  --paper: #eef1f4;
+  --surface: #ffffff;
+  --sunken: #e4e9ee;
+  --ink: #141b26;
+  --ink-2: #4a5666;
+  --ink-3: #7c8899;
+  --line: #d3dae1;
+  --accent: #1f4fd8;
+  --accent-soft: #e0e7fb;
+  --clay: #c4603a;
+  --clay-soft: #f6e5dd;
+  --ok: #1d7a52;
+
+  --display: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  --body:
+    "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --measure: 66ch;
+  --wrap: 1080px;
+  --r: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0d131c;
+    --surface: #151e2a;
+    --sunken: #101823;
+    --ink: #e4e9ef;
+    --ink-2: #9aa7b8;
+    --ink-3: #6c7a8c;
+    --line: #263243;
+    --accent: #7b9dff;
+    --accent-soft: #1b2a4d;
+    --clay: #e0835c;
+    --clay-soft: #3a2419;
+    --ok: #4bbd8b;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0d131c;
+  --surface: #151e2a;
+  --sunken: #101823;
+  --ink: #e4e9ef;
+  --ink-2: #9aa7b8;
+  --ink-3: #6c7a8c;
+  --line: #263243;
+  --accent: #7b9dff;
+  --accent-soft: #1b2a4d;
+  --clay: #e0835c;
+  --clay-soft: #3a2419;
+  --ok: #4bbd8b;
+}

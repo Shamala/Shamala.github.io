@@ -39,10 +39,10 @@ file it lives in.
    - Capture a 900px-wide JPEG of the running app into `previews/<repo>.jpg`
      (drive it into a populated state first — do not ship a screenshot of an
      empty form)
-   - Add a card to the `.demos` grid matching the existing markup: date
-     eyebrow, name, description, stack line, Live demo + Source buttons
-   - Add the repo name to the `HIDDEN` array so it does not also appear in the
-     API-driven grid below
+   - Add a card to the `.demos` grid matching the existing markup:
+     `<article class="demo" data-repo="<repo>">` with name, description, stack
+     line, Live demo + Source buttons. The `data-repo` attribute keeps it out
+     of the API-driven grid below — no other list to update
    - Commit and push
 
 8. **Close the loop.** Set the idea's `Status` to `built` and add its live URL.
