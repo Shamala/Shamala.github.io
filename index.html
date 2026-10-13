@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="css/sections.css" />
 
   <script type="module" src="js/github-repos.js"></script>
+  <script type="module" src="js/demo-video.js"></script>
 </head>
 <body>
 <header class="bar">
@@ -110,6 +111,69 @@
 
       <p class="subhead">Featured projects &amp; demos</p>
       <div class="demos">
+        <article class="demo feature" data-repo="DailyLight">
+          <div class="feature-media">
+            <video
+              id="dailylight-video"
+              class="feature-video"
+              poster="previews/dailylight-poster.jpg"
+              width="540"
+              height="960"
+              muted
+              loop
+              playsinline
+              preload="none"
+              data-play-in-view
+              aria-label="Daily Light promo video, 24 seconds"
+            >
+              <source src="previews/dailylight-promo.mp4" type="video/mp4" />
+              <source src="previews/dailylight-promo.webm" type="video/webm" />
+            </video>
+            <button
+              class="video-sound"
+              type="button"
+              data-sound-for="dailylight-video"
+            >
+              Unmute
+            </button>
+          </div>
+          <div class="demo-body">
+            <p class="feature-eyebrow">Live on Google Play · Android</p>
+            <h3>Daily Light</h3>
+            <p>
+              A home-screen widget rather than an app to open. Unlock the phone
+              and it shows the date, how far along the year is, an affirmation
+              and a short thought to sit with. The words hold still all day,
+              then turn to a closing voice in the evening, and the colours
+              follow the light from indigo at dawn to rose at dusk.
+            </p>
+            <ul class="feature-facts">
+              <li>No account</li>
+              <li>No network requests</li>
+              <li>No tracking or ads</li>
+            </ul>
+            <p class="demo-stack">
+              Kotlin · Android App Widgets · RemoteViews · promo video in
+              Remotion
+            </p>
+            <div class="demo-links">
+              <a
+                class="btn small primary"
+                href="https://play.google.com/store/apps/details?id=com.shamala.dailylight"
+                target="_blank"
+                rel="noopener"
+                >Get it on Google Play</a
+              >
+              <a
+                class="btn small"
+                href="https://github.com/Shamala/DailyLight"
+                target="_blank"
+                rel="noopener"
+                >Source</a
+              >
+            </div>
+          </div>
+        </article>
         <article class="demo" data-repo="ClassUpdates-Vibgyor">
           <a
             class="demo-shot"
@@ -412,16 +476,6 @@
             Personal portfolio website showcasing engineering experience,
             featured projects, and live demos.
           </p>
-          <div class="repo-meta"><span>pushed Sep 2026</span></div>
-        </a>
-        <a
-          class="repo ghost"
-          href="https://github.com/Shamala/DailyLight"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="repo-name">DailyLight</span>
-          <p class="repo-desc">Description loads live.</p>
           <div class="repo-meta"><span>pushed Sep 2026</span></div>
         </a>
         <a

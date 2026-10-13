@@ -9,7 +9,6 @@ export const GITHUB_USERNAME = "Shamala";
 // most-recent push. Reorder freely.
 export const PINNED = [
   "Shamala.github.io",
-  "DailyLight",
   "LearningLangChain",
   "NestJs",
   "techNotes-project-frontend",

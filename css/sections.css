@@ -179,6 +179,111 @@
   margin-top: 3px;
 }
 
+/* ---------- featured: a shipped app with a vertical promo video ---------- */
+.demo.feature {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+}
+.feature-media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  /* the video's own night-sky indigo, in both themes */
+  background: radial-gradient(
+    ellipse 85% 60% at 50% 45%,
+    #2b2452 0%,
+    #14122a 72%
+  );
+  border-right: 1px solid var(--line);
+}
+.feature-video {
+  display: block;
+  width: 100%;
+  max-width: 228px;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 14px;
+  background: #14122a;
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.video-sound {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font: 500 11px var(--mono);
+  color: #efeaff;
+  background: rgba(20, 18, 42, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 20px;
+  padding: 5px 11px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+.video-sound:hover {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.feature .demo-body {
+  padding: 26px 28px;
+  justify-content: center;
+  gap: 11px;
+}
+.feature .demo-body h3 {
+  font-family: var(--display);
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+.feature .demo-body p {
+  flex: none;
+  font-size: 15px;
+  max-width: 62ch;
+}
+.feature .demo-body .demo-stack {
+  font-size: 11px;
+}
+.feature .demo-body .feature-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+.feature-facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.feature-facts li {
+  font: 500 11.5px var(--mono);
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: var(--sunken);
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+}
+@media (max-width: 640px) {
+  .demo.feature {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .feature-media {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 20px;
+  }
+  .feature-video {
+    max-width: 200px;
+  }
+  .feature .demo-body {
+    padding: 18px;
+  }
+}
+
 /* ---------- experience: pipeline ---------- */
 .pipe {
   position: relative;
