@@ -210,6 +210,25 @@
     0 18px 40px rgba(0, 0, 0, 0.45),
     0 0 0 1px rgba(255, 255, 255, 0.08);
 }
+/* Kolam a Day's video is set on the app's own paper, not a night sky. */
+.feature-media.paper {
+  background: radial-gradient(
+    ellipse 85% 60% at 50% 45%,
+    #ffffff 0%,
+    #e6e9e5 75%
+  );
+}
+.private-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 500 12px var(--mono);
+  color: var(--ink-2);
+  padding: 6px 11px;
+  border: 1px dashed var(--line);
+  border-radius: var(--r);
+  background: var(--sunken);
+}
 .video-sound {
   position: absolute;
   right: 12px;
