@@ -6,7 +6,7 @@ Personal portfolio — static HTML, CSS and ES modules, no build step.
 index.html            page content
 css/
   fonts.css           self-hosted Fraunces, Inter and JetBrains Mono (see fonts/)
-  shamallya-tokens.css  vendored copy of @shamallya-ui/tokens (v0.1.0), light + dark
+  shamallya-tokens.css  vendored copy of @shamallya-ui/tokens (v0.2.0), light + dark
   tokens.css          local aliases onto the ShaMallya semantic tokens
   base.css            element defaults, .wrap, focus, reduced motion
   layout.css          header bar, hero, section shell, footer
