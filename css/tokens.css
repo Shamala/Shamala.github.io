@@ -1,4 +1,4 @@
-/* Design tokens: this site follows @shamallya-ui/tokens (css/shamallya-tokens.css, v0.1.0).
+/* Design tokens: this site follows @shamallya-ui/tokens (css/shamallya-tokens.css, v0.2.0).
    The tokens lead; the names below are local aliases onto semantic tokens, so the rest
    of the stylesheets did not have to change. Light/dark switching (data-theme or the OS
    preference) is handled inside shamallya-tokens.css. */
@@ -9,8 +9,7 @@
   --sunken: var(--shamallya-semantic-color-surface-sunken);
   --ink: var(--shamallya-semantic-color-text-default);
   --ink-2: var(--shamallya-semantic-color-text-muted);
-  /* The tokens have no third text level yet; tertiary text uses the muted token. */
-  --ink-3: var(--shamallya-semantic-color-text-muted);
+  --ink-3: var(--shamallya-semantic-color-text-subtle);
   --line: var(--shamallya-semantic-color-border-default);
 
   /* Blue: links, outlines and borders use the text step; filled buttons use the fill step. */
@@ -19,10 +18,10 @@
   --on-accent: var(--shamallya-semantic-color-primary-on);
   --accent-soft: var(--shamallya-semantic-color-info-subtle);
 
-  /* "Clay" was a warm highlight colour: it now maps to the warning/highlight family
-     (ochre in light mode, yellow in dark mode). */
-  --clay: var(--shamallya-semantic-color-warning-text);
-  --clay-soft: var(--shamallya-semantic-color-warning-subtle);
+  /* "Clay" was a warm highlight colour: it maps to the highlight role (ochre in light mode,
+     yellow in dark mode), which is separate from the warning status. */
+  --clay: var(--shamallya-semantic-color-highlight-text);
+  --clay-soft: var(--shamallya-semantic-color-highlight-subtle);
   --ok: var(--shamallya-semantic-color-success-text);
 
   --display: var(--shamallya-semantic-font-heading);
