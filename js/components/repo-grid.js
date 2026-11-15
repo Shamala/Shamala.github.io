@@ -8,8 +8,8 @@ import {
   MAX_REPOS,
   REPO_DESCRIPTIONS,
   LANG_COLORS,
-} from "./config.js";
-import { esc, since, monthYear } from "./format.js";
+} from "../data/config.js";
+import { esc, since, monthYear } from "../lib/format.js";
 
 const reposEl = document.getElementById("repos");
 const noteEl = document.getElementById("gh-note");

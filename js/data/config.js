@@ -13,6 +13,9 @@ export const PINNED = [
   "NestJs",
   "techNotes-project-frontend",
   "image-recognition-app",
+  "typesafe-smart-inbox",
+  "typescript-cart",
+  "robo-friends",
 ];
 
 // Repo names to keep off the page entirely, beyond the featured demos.
