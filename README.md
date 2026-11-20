@@ -1,5 +1,7 @@
 # shamala.github.io
 
+**▶ Live site: https://shamala.github.io/**
+
 Personal portfolio — static HTML, CSS and ES modules, no build step.
 
 ```
